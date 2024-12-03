@@ -1,0 +1,85 @@
+/* Modal container */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Modal content */
+  .modal-content {
+    background-color: #2a2d3e; /* Dark theme background color */
+    width: 90%; /* Responsive width */
+    max-width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    text-align: center; /* Center align all text */
+    color: #ffffff; /* White text color for dark background */
+  }
+  
+  /* Heading */
+  .modal-content h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff; /* Bright white heading */
+  }
+  
+  /* Input and textarea styles */
+  .modal-content input,
+  .modal-content textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #4f4f6e; /* Subtle border matching theme */
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #3a3d56; /* Input background matching the theme */
+    color: #ffffff; /* Text color for inputs */
+    box-sizing: border-box;
+  }
+  
+  .modal-content input::placeholder,
+  .modal-content textarea::placeholder {
+    color: #9a9fbf; /* Placeholder text with muted color */
+  }
+  
+  /* Button styles */
+  .modal-content button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Add button styling */
+  .modal-content button:first-of-type {
+    background-color: #6c5ce7; /* Purple for "Add" */
+    color: #ffffff; /* White text */
+  }
+  
+  .modal-content button:first-of-type:hover {
+    background-color: #5a4fcf; /* Darker purple on hover */
+  }
+  
+  /* Cancel button styling */
+  .modal-content button:last-of-type {
+    background-color: #d63031; /* Red for "Cancel" */
+    color: #ffffff; /* White text */
+  }
+  
+  .modal-content button:last-of-type:hover {
+    background-color: #c0392b; /* Darker red on hover */
+  }
+  

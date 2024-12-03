@@ -1,0 +1,135 @@
+/* Task Card Styling (Dark Theme) */
+.task-card {
+    background-color: #3a3d56 !important; /* Dark background for the card */
+    color: white !important; /* White text for visibility */
+    border: 1px solid #444f69; /* Subtle dark border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px; /* Space between cards */
+  }
+  
+  .task-card .card-content .due-date {
+    color: #b0b3b8; /* Light gray for due date */
+    font-size: 0.9rem;
+  }
+
+  .task-card .card-content {
+    padding: 15px; /* Padding inside the card */
+  }
+  
+  .task-card .card-content h6 {
+    color: white !important; /* White text for title */
+    font-size: 1.1rem; /* Slightly larger text */
+    margin-bottom: 10px; /* Space below the title */
+  }
+  
+  .task-card .card-content .body-text {
+    color: #b0b3b8 !important; /* Light gray for description */
+    font-size: 0.9rem; /* Slightly smaller text */
+  }
+  
+  .task-card .card-content .due-date {
+    color: white !important; /* Light gray for due date */
+    font-size: 0.9rem;
+  }
+  
+  /* Card Actions (Buttons) */
+  .task-card .card-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px; /* Padding inside the action bar */
+  }
+  
+  .task-card .card-actions button {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: none; /* No uppercase on button text */
+  }
+  
+  /* Complete Button */
+  .task-card .card-actions .complete-button {
+    background-color: #6c5ce7; /* Purple for complete button */
+    color: white !important;
+    border: none;
+  }
+  
+  .task-card .card-actions .complete-button:hover {
+    background-color: #5a4fcf; /* Darker purple on hover */
+  }
+  
+  /* Unmark Button */
+  .task-card .card-actions .unmark-button {
+    background-color: #f39c12; /* Yellow for unmark */
+    color: white;
+  }
+  
+  .task-card .card-actions .unmark-button:hover {
+    background-color: #e67e22; /* Darker yellow on hover */
+  }
+  
+  /* Delete Button */
+  .task-card .card-actions .delete-button {
+    background-color: #e74c3c; /* Red for delete */
+    color: white;
+    border: none;
+  }
+  
+  .task-card .card-actions .delete-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+  }
+  
+  /* Confirmation Modal (Dark Theme) */
+  .confirmation-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7) !important; /* Dark transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .confirmation-modal .modal-content {
+    background-color: #2a2d3e !important; /* Dark background for modal */
+    color: white !important; /* White text in the modal */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Slight shadow for focus */
+  }
+  
+  .confirmation-modal .modal-content button {
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Yes Button (Confirm Deletion) */
+  .confirmation-modal .modal-content .yes-button {
+    background-color: #e74c3c; /* Red background for confirmation */
+    color: white;
+    border: none;
+  }
+  
+  .confirmation-modal .modal-content .yes-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+  }
+  
+  /* No Button (Cancel Deletion) */
+  .confirmation-modal .modal-content .no-button {
+    background-color: #34495e; /* Dark grey for cancel */
+    color: white !important;
+    border: none;
+  }
+  
+  .confirmation-modal .modal-content .no-button:hover {
+    background-color: #2c3e50 !important; /* Darker grey on hover */
+  }
+  
